@@ -24,12 +24,19 @@ class Robot():
     @property
     def states(self):
         return self.__states
-
-    # setter state
-    @states.setter
-    def states(self):
-      return self.__states[self.__power]
     
+
+    # getter current_speed
+    @property
+    def current_speed(self):
+        return self.__current_speed
+      
+    # setter current_speed
+    @current_speed.setter
+    def current_speed(self, current_speed):
+      self.__current_speed= current_speed
+
+
 
     def __init__(self, name, power = 'False'):
       self.name = name
@@ -50,4 +57,3 @@ class Robot():
     """
 
 if __name__ == "__main__":
-  
