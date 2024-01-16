@@ -6,7 +6,6 @@ class Robot():
     __current_speed = 0
     __battery_level = 0
     __states = ['shutdown', 'running']
-    __speed = 0
     __charging = False
     
     
@@ -46,14 +45,19 @@ class Robot():
       self.__power = power
 
     
-    def recharge(self): 
+    def charge(self): 
+      pass
 
+    def status(self):
+       print("status")
       
     def stop(self):
-      __speed = 0
+      self.__current_speed = 0
     
     """
       Give your best code here ( •̀ ω •́ )✧
     """
 
 if __name__ == "__main__":
+
+  print("test")
